@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container-fluid {
+      display: flex;
+      height: 100vh;
+    }
+    .options-side,
+    .form-side {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .options-side {
+      background-image: url('vecteezy_blue-mountain-landscape-background-illustration_7692868.jpg'); /* Replace with your image URL or path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex-direction: column; 
+    }
+    .options-side img {
+      width: 30px;
+      height: 30px;
+      margin-center: 10px;
+    }
+    .options-side .btn {
+      height: 40px;
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px; /* Reduced font size */
+    }
+    .form-side {
+      background-color: #ffffff; /* Light Gray */
+    }
+    .form-side form {
+      background-color: #ffffff; /* Removed white background */
+      padding: 50px;
+    }
+    .form-side h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .form-side .form-group {
+      margin-bottom: 10px; /* Adjusted margin to reduce the size of the label box */
+    }
+    .form-side label {
+      font-size: 14px;
+    }
+    .form-side .terms-checkbox {
+      font-size: 12px; /* Adjusted font size for terms text */
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <!-- Options Side -->
+  <div class="options-side">
+    <button class="btn btn-primary btn-lg btn-block">
+      <img src="icons8-linkedin-30.png" alt="LinkedIn"> Signup with LinkedIn
+    </button>
+    <button class="btn btn-info btn-lg btn-block">
+      <img src="icons8-twitter-30.png" alt="Twitter"> Signup with Twitter
+    </button>
+    <button class="btn btn-primary btn-lg btn-block">
+      <img src="icons8-facebook-30.png" alt="Facebook"> Signup with Facebook
+    </button>
+  </div>
+
+  <!-- Form Side -->
+  <div class="form-side">
+    <form>
+      <h2>Signup</h2>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Enter your username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="termsCheckbox">
+        <label class="form-check-label terms-checkbox" for="termsCheckbox">
+          Creating an account means you’re okay with our
+          <a href="#">Terms of Service</a>,
+          <a href="#">Privacy Policy</a>,
+          and default Notification Settings
+        </label>
+      </div>
+      <button type="submit" class="btn btn-success btn-lg btn-block">Signup</button>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap JS and jQuery (Optional) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
